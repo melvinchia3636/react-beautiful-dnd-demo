@@ -1,25 +1,5 @@
 import { useState } from "react";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
-import styled from "styled-components";
-
-const Container = styled.div`
-  margin: 8px;
-  border: 1px solid lightgrey;
-  border-radius: 2px;
-`;
-const Title = styled.h3`
-  padding: 8px;
-`;
-const TaskList = styled.div`
-  padding: 8px;
-`;
-
-const TaskContainer = styled.div`
-  border: 1px solid lightgrey;
-  border-radius: 2px;
-  padding: 8px;
-  margin-bottom: 8px;
-`;
 
 const initialData = {
   tasks: {
@@ -35,7 +15,6 @@ const initialData = {
       taskIds: ["task-1", "task-2", "task-3", "task-4"],
     },
   },
-  // Facilitate reordering of the columns
   columnOrder: ["column-1"],
 };
 
